@@ -2,7 +2,24 @@
 
 
 
-/*** 2b. Funktionalität mit Array 2 ***/
+
+
+// output(getSentenceArr2(["Ich","bin"]));
+// output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
+// function getSentenceArr2(arr) {
+//     const gap = " ";
+//     const punct = ".";
+//     let str = "";
+    
+
+//     for (let i = 0; i < arr.length; i++){
+//         str += arr[i] + gap;
+//         end = arr[i] + "";          // erster Versuch, aber hier wird das letzte Wort doppelt angezeigt
+//     }
+    
+//     return str + end + punct;
+// }
+
 
 output(getSentenceArr2(["Ich","bin"]));
 output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
@@ -12,14 +29,34 @@ function getSentenceArr2(arr) {
     let str = "";
     
 
-    for (let i = 0; i < arr.length; i++){
+    for (let i = 0; i < arr.length - 1; i++) {
         str += arr[i] + gap;
-        end = arr[i] + "";          // Sam dogodalsya :)
+    }    
+    for (let j = 0; j < arr.length; j++) { 
+    end = arr[j] + "";          
     }
     
     return str + end + punct;
 }
 
+
+
+/*** 2b. Funktionalität mit Array 2 ***/
+
+// output(getSentenceArr2(["Ich","bin"]));
+// output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
+// function getSentenceArr2(arr) {
+//     const gap = " ";
+//     const punct = ".";
+//     let str = "";
+    
+
+//     for (let i = 0; i < arr.length; i++){
+//         str += arr[i] + gap;
+//     }
+    
+//     return str + punct;
+// }
 
 
 
