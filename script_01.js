@@ -4,6 +4,31 @@
 
 
 
+// Aufgabe mit if else 
+
+output(getSentenceArr2(["Ich","bin"]));
+output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
+function getSentenceArr2(arr) {
+    const gap = " ";
+    const punct = ".";
+    let str = "";
+    
+
+    for (let i = 0; i < arr.length; i++){
+        if (i != arr.length -1){
+            str += arr[i] + gap;        
+        } else {
+            str += arr[i] + punct;
+        }
+    }
+    
+    return str;
+}
+
+
+
+// // Aufgabe: Nach dem letzten Wort den Punkt ohne leerzeichen
+
 // output(getSentenceArr2(["Ich","bin"]));
 // output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
 // function getSentenceArr2(arr) {
@@ -14,31 +39,31 @@
 
 //     for (let i = 0; i < arr.length; i++){
 //         str += arr[i] + gap;
-//         end = arr[i] + "";          // erster Versuch, aber hier wird das letzte Wort doppelt angezeigt
+//         end = arr[i] + "";          
+//     }
+    
+//     return str + end + punct;
+// }                               // erster Versuch, aber hier wird das letzte Wort doppelt angezeigt
+
+
+// output(getSentenceArr2(["Ich","bin"]));
+// output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
+// function getSentenceArr2(arr) {
+//     const gap = " ";
+//     const punct = ".";
+//     let str = "";
+    
+
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         str += arr[i] + gap;
+//     }    
+//     for (let j = 0; j < arr.length; j++) { 
+//     end = arr[j] + "";                          // man kann auch arr[i] nehmen weil die nacheinander kommen.
 //     }
     
 //     return str + end + punct;
 // }
-
-
-output(getSentenceArr2(["Ich","bin"]));
-output(getSentenceArr2(["Ich","bin","Max","Mütze"]));
-function getSentenceArr2(arr) {
-    const gap = " ";
-    const punct = ".";
-    let str = "";
-    
-
-    for (let i = 0; i < arr.length - 1; i++) {
-        str += arr[i] + gap;
-    }    
-    for (let j = 0; j < arr.length; j++) { 
-    end = arr[j] + "";          
-    }
-    
-    return str + end + punct;
-}
-
+// //
 
 
 /*** 2b. Funktionalität mit Array 2 ***/
